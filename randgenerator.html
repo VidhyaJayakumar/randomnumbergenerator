@@ -1,21 +1,20 @@
 <style>
     @import url('https://fonts.googleapis.com/css?family=Lobster+Two');
-    </style>
-    <h2 class="caption">This page will answer whether your number is odd or even</h2>
-    <h3 class="sub-caption">Enter a number</h3>
-    <input type="text" id="demo" placeholder="Enter a number">
-    <button class="demo" onclick="randomNumber()">Submit</button>
-    <p id="demo1"></p>
-    <script>
-    function randomNumber(){
-        var getRandom=document.getElementById("demo").value;
-        
+</style>
+<h2 class="caption">This page will answer whether your number is odd or even</h2>
+<h3 class="sub-caption">Enter a number</h3>
+<input type="text" id="demo" placeholder="Enter a number">
+<button class="demo" onclick="randomNumber()">Submit</button>
+<p id="demo1"></p>
+<script>
+    function randomNumber() {
+        var getRandom = document.getElementById("demo").value;
+
         //alert(getRandom);
-         if(getRandom==2){
-             document.getElementById("demo1").innerHTML= "You are correct";
-         }
-         else {
-            document.getElementById("demo1").innerHTML= "Enter another number";
-         }
+        if (getRandom == 2) {
+            document.getElementById("demo1").innerHTML = "You are correct";
+        } else {
+            document.getElementById("demo1").innerHTML = "Enter another number";
+        }
     }
 </script>
