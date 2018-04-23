@@ -39,4 +39,27 @@
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
+        function randomNumber3(){
+        var getRandom = document.getElementById("demo6").value;
+
+                alert ("You entered " + getRandom);
+
+        if (getRandom == 14*5) {
+            document.getElementById("demo5").innerHTML = "You are correct";
+        } 
+        else {
+            document.getElementById("demo5").innerHTML = "That's wrong";
+        }
+    
+}
+
+
+    
 </script>
+    
+    
+
+        <input type="text" id="demo6" placeholder="What is 14 x 5?">
+        <button class="demo3" onclick="randomNumber3()">Submit</button>
+        <p id="demo5"></p>
+        
