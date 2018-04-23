@@ -11,7 +11,7 @@
         var getRandom = document.getElementById("demo").value;
 
         //alert(getRandom);
-        if (getRandom == 12*5) {
+        if (getRandom == 12 * 5) {
             document.getElementById("demo1").innerHTML = "You are correct";
         } else {
             document.getElementById("demo1").innerHTML = "That's wrong";
@@ -25,9 +25,9 @@
     function randomNumber2() {
         var getRandom = document.getElementById("demo3").value;
 
-        alert ("This is a random number " + getRandomInteger(1,20));
+        alert("This is a random number " + getRandomInteger(1, 20));
 
-        if (getRandom == 13*5) {
+        if (getRandom == 13 * 5) {
             document.getElementById("demo4").innerHTML = "You are correct";
         } else {
             document.getElementById("demo4").innerHTML = "That's wrong";
@@ -39,27 +39,21 @@
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
-        function randomNumber3(){
+
+    function randomNumber3() {
         var getRandom = document.getElementById("demo6").value;
 
-                alert ("You entered " + getRandom);
+        alert("You entered " + getRandom);
 
-        if (getRandom == 14*5) {
+        if (getRandom == 14 * 5) {
             document.getElementById("demo5").innerHTML = "You are correct";
-        } 
-        else {
+        } else {
             document.getElementById("demo5").innerHTML = "That's wrong";
         }
-    
-}
 
-
-    
+    }
 </script>
-    
-    
 
-        <input type="text" id="demo6" placeholder="What is 14 x 5?">
-        <button class="demo3" onclick="randomNumber3()">Submit</button>
-        <p id="demo5"></p>
-        
+<input type="text" id="demo6" placeholder="What is 14 x 5?">
+<button class="demo3" onclick="randomNumber3()">Submit</button>
+<p id="demo5"></p>
