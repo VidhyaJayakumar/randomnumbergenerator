@@ -7,7 +7,7 @@
 <button class="demo" onclick="randomNumber()">Submit</button>
 <p id="demo1"></p>
 <script>
-    function randomNumber() {
+    function randomNumber() { 
         var getRandom = document.getElementById("demo").value;
 
         //alert(getRandom);
@@ -48,12 +48,30 @@
         if (getRandom == 14 * 5) {
             document.getElementById("demo5").innerHTML = "You are correct";
         } else {
-            document.getElementById("demo5").innerHTML = "That's wrong";
-        }
-
+            }
     }
+            function multiplyNumbers(){
+            var firstNumber=document.getElementById("number1").value ;
+            var secondNumber=document.getElementById("number2").value; 
+            var ProductNumbers=firstNumber*secondNumber;
+            document.getElementById("product").innerHTML=ProductNumbers; 
+
+
+
+
+
+            }
+        
+
+    
 </script>
 
 <input type="text" id="demo6" placeholder="What is 14 x 5?">
 <button class="demo3" onclick="randomNumber3()">Submit</button>
 <p id="demo5"></p>
+
+<input type="text" id="number1" placeholder="Enter a number"><br><br>
+<input type="text" id="number2" placeholder="Enter a number"><br><br>
+<button class="btn btn-primary" onClick="multiplyNumbers()">Submit</button><br><br>
+<p id="product"></p>
+
