@@ -5,10 +5,16 @@
 </head>
 <body>
     <p>Simple Java Script Program</p>
-    <img src="http://sce-energysolutions.com.au/wp-content/uploads/2013/07/SCE-energy-solutions-retina-01.png" onmouseover="this.src='https://pbs.twimg.com/profile_images/3506818410/4964cdb55451a69a06056fffdbefb1f1_400x400.jpeg'" onmouseout="this.src='http://sce-energysolutions.com.au/wp-content/uploads/2013/07/SCE-energy-solutions-retina-01.png'";>
+    <img  id ="image1" src="http://sce-energysolutions.com.au/wp-content/uploads/2013/07/SCE-energy-solutions-retina-01.png" onmouseover="this.src='https://pbs.twimg.com/profile_images/3506818410/4964cdb55451a69a06056fffdbefb1f1_400x400.jpeg'" onmouseout="this.src='http://sce-energysolutions.com.au/wp-content/uploads/2013/07/SCE-energy-solutions-retina-01.png'" onClick="this.src='https://www.buildallen.com/wp-content/uploads/2017/02/5162_SCE_HighEnergyUseAlert_BillImg_727x405_3-500x279.jpg'";>
+    <input type="button" value="Click on me" onClick="imageChange()">   
     <script>
-        alert("This is a company");
-    </script>
+        function imageChange(){
+            document.getElementById("image1").src="https://www.sce.com/wps/wcm/connect/b6ff1efa-38b6-46fc-9a89-7b62836edfad/SCE_Service_Territory_Map.jpg?MOD=AJPERES&CACHEID=b6ff1efa-38b6-46fc-9a89-7b62836edfad";
+        }
+
+
+
+</script>
 </body>
 </html>
 
