@@ -81,8 +81,9 @@ document.getElementById("shoppingList").innerHTML=items;
     <script>
     function addNumbers(a,b){
     var c=a-b;
+    return c;
     
-    alert("The answer is  "  + c);
+
     }
     document.write(addNumbers(1,2));
     
@@ -91,4 +92,16 @@ document.getElementById("shoppingList").innerHTML=items;
 
     
 </script>
+<script>
+function reverseWord(str){
+var array=[];
+array=str.split('');
+arr=array.reverse();
+ar=array.join();
+return ar;
+}
+document.write(reverseWord('hello'));
+
+</script>
+
 
